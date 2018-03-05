@@ -17,9 +17,6 @@ function getData() {
 			document.getElementById('nn').innerHTML =  myArr.PartsofSpeechCounts.Nouns;
 			document.getElementById('vb').innerHTML =  myArr.PartsofSpeechCounts.Verbs;
 			document.getElementById('ad').innerHTML =  myArr.PartsofSpeechCounts.Adjectives;
-
-
-
 		}
 	};
 }
