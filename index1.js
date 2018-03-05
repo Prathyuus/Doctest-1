@@ -47,13 +47,14 @@ console.log("Document rejected");
 else console.log("Document Accepted");
 //check the document for spelling mistakes
 var natural = require('natural');
+var tokenizedarray=tokenizer.tokenize(fileq);
 var spellcheck=new natural.Spellcheck(dictArray);
 var mistakes=0;
-for (var i = prcdata.length - 1; i >= 0; i--) {
-	if(!spellcheck.isCorrect(prcdata[i]))
+for (var i = tokenizedarray.length - 1; i >= 0; i--) {
+	if(!spellcheck.isCorrect(tokenizedarray[i]))
 	{
 		mistakes++;
-		mistakesArray.push(prcdata[i]);
+		mistakesArray.push(tokenizedarray[i]);
 	}
 }
 console.log("number of mistakes are:"+mistakes);

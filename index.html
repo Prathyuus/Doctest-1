@@ -17,10 +17,14 @@
     <a class="btn btn-primary btn-lg" href="#" role="button" onclick="getData()">View Results.</a>
     	<script type="text/javascript" src="index.js"></script>
   </p>
-  <p id="msg"></p>
-
-</div>
-	
+  <div class="container_fluid">
+  <div class="row">
+  <div class="col-sm-3">
+  <h4>WordCount:</h4><p>Standard Document:</p><p id="wc"></p><p>Test Document:</p><p id="wc1"></p><br></div>
+  <div class="col-sm-3"><h4>SpellCheck:</h4><br><p>Number of Mistakes:</p><p id="nom"></p><p>Mistakes:</p><p id="mis"></p><br></div>
+  <div class="col-sm-3"><p><b>Similarity between the documents in percentage:</b></p><p id="sim"></p><br></div>
+  <div class="col-sm-3"><h5>Parts of Speech details of the test document:</h5><br><p>Number of Nouns:<p id="nn"></p><br>Number of Verbs:<p id="vb"></p><br>Number of Adjectives:<p id="ad"></p></div>
+  </div></div>
 </center>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
