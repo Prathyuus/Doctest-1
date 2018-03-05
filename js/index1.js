@@ -5,7 +5,7 @@ var tokenizer = new natural.WordTokenizer();
 var stringSimilarity = require('string-similarity');
 var similarity =0;
 var dec=0;
-var fileq = 'nv.txt';
+var fileq = '../src/nv.txt';
 
 var dataA;var tokenArrayA=[];
 var base_folder = path.join(path.dirname(require.resolve("natural")), "brill_pos_tagger");
@@ -18,10 +18,10 @@ var rules = new natural.RuleSet(rulesFilename);
 var tagger = new natural.BrillPOSTagger(lexicon, rules);
 
 //initialize the file names
-var file = 'nv.txt';//my document
-var file1 = 'nv1.txt';//standard document
-var file2 = 'stopwords.txt';
-var file3 = 'dict.txt';
+var file = '../src/nv.txt';//my document
+var file1 = '../src/nv1.txt';//standard document
+var file2 = '../src/stopwords.txt';
+var file3 = '../src/dict.txt';
 //reading the text files
 var data = fs.readFileSync(file, 'utf8');
 var data1 = fs.readFileSync(file1, 'utf8');

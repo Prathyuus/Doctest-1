@@ -1,0 +1,23 @@
+{
+  "Wordcount": {
+    "Standard": 2054,
+    "Text": 2055
+  },
+  "Decision": {
+    "Accepted": 0
+  },
+  "Spellcheck": {
+    "NumberofMistakes": 1,
+    "Mistakes": [
+      "src"
+    ]
+  },
+  "DocumentsSimilarity": {
+    "Percentage": 88
+  },
+  "PartsofSpeechCounts": {
+    "Nouns": 557,
+    "Verbs": 364,
+    "Adjectives": 190
+  }
+}
